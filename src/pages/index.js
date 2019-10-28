@@ -3,9 +3,6 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Footer from '../components/Footer';
-import pic1 from '../images/pic01.jpg';
-import pic2 from '../images/pic02.jpg';
-import pic3 from '../images/pic03.jpg';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
@@ -58,55 +55,55 @@ const IndexPage = () => (
         <div className="inner">
           <h2>Реализация на проекта</h2>
           <p>
-            Всеки ще има поле за изява и ще може да допринесе за развитието на този проект. Кодът за платформата
+            Всеки ще има поле за изява и ще може да допринесе за развитието на този проект.
           </p>
           <div className="features">
+            <section>
+              <span className="icon major fa-pencil" />
+              <h3>Съдържание</h3>
+              <p>
+                Тъй като основната идея на платформата е да се доставя качествено съдържание, ще имаме нужда от доброволци, защото никой не би искал да чете мои произведения. :)
+              </p>
+            </section>
+
+            <section>
+              <span className="icon major fa-info" />
+              <h3>Нова информация</h3>
+              <p>
+                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                aliquam turpis mauris, sed ultricies erat dapibus.
+              </p>
+            </section>
+
+            <section>
+              <span className="icon major fa-magic" />
+              <h3>Дизайн</h3>
+              <p>
+                Ще имаме нужда от лого и дизайн на платформата. Всеки, който има някакви идеи, е добре дошъл.
+              </p>
+            </section>
+
             <section>
               <span className="icon major fa-code" />
               <h3>Код</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Кодът за платформата ще бъде изцяло open-source.
               </p>
             </section>
+
             <section>
-              <span className="icon major fa-lock" />
-              <h3>Дизайн</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon major fa-cog" />
-              <h3>Съдържание</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon major fa-desktop" />
-              <h3>Информация (нови статии)</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon major fa-chain" />
+              <span className="icon major fa-language" />
               <h3>Превод</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Ако искаме повече хора да разберат колко хубава страна е България, ще имаме нужда от хора, които да превеждат вече качените статии на други езици.
               </p>
             </section>
+
             <section>
-              <span className="icon major fa-diamond" />
+              <span className="icon major fa-comments"></span>
               <h3>Идеи</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Всяка идея е добре дошла и ако бъде приета от общостта, би могла да бъде реализирана.
               </p>
             </section>
           </div>
@@ -121,7 +118,7 @@ const IndexPage = () => (
           </p>
           <div className="split style1">
             <section>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScpdfpaERU2SHD62s2qyqOCBUb9MULQ3D6LdcLMzqMGpbdDJA/viewform?usp=sf_link" className="button" target="_blank" style={{backgroundColor: '#C6008F', '&:hover': '#000000'}}>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScpdfpaERU2SHD62s2qyqOCBUb9MULQ3D6LdcLMzqMGpbdDJA/viewform?usp=sf_link" className="button" target="_blank" style={{backgroundColor: '#C6008F'}}>
                 Да действаме!
               </a>
             </section>
