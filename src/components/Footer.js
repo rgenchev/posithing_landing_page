@@ -5,8 +5,8 @@ const Footer = () => (
   <footer id="footer" className="wrapper style1-alt">
     <div className="inner">
       <ul className="menu">
-        <li>&copy; Untitled. All rights reserved.</li>
-        <li>
+        <li style={{color: '#C6008F'}}>&copy; Posithing. All rights reserved.</li>
+        <li style={{color: '#C6008F'}}>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>
       </ul>
