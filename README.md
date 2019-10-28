@@ -1,4 +1,6 @@
-# gatsby-starter-hyperspace
+# Posithing
+
+## Template used
 
 Gatsby.js V2 starter template based on Hyperspace by HTML5 UP
 
