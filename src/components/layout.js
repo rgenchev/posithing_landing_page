@@ -21,13 +21,12 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Posithing' },
-            { name: 'keywords', content: 'site, web' },
+            { name: 'keywords', content: 'новини, медия, България, позитивизъм, постижения, успехи, гордост' },
           ]}
         >
           <html lang="en" />
         </Helmet>
         <div>{children}</div>
-        />
       </>
     )}
   />
