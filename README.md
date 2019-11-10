@@ -1,19 +1,20 @@
 # Posithing
 
+## Getting Started
+
+1. Install `gatsby-cli` by using the following command: `npm install -g gatsby-cli` (More info: https://github.com/gatsbyjs/gatsby)
+2. Clone this repo: `git clone https://github.com/rgenchev/posithing_landing_page.git`
+3. `cd posithing_landing_page`
+4. `npm install`
+5. `gatsby develop`
+
+
 ## Used template
 
-Gatsby.js V2 starter template based on Hyperspace by HTML5 UP
+Gatsby.js V2 starter template based on Hyperspace by HTML5 UP (https://github.com/anubhavsrivastava/gatsby-starter-hyperspace)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Contribution
 
-Check online demo [here](https://anubhavsrivastava.github.io/gatsby-starter-hyperspace/)
+Suggestions and PRs are welcome!
 
-## Screenshot
-
-![Screenshot](./src/assets/img/hyperspace.jpg)
-
-### License
-
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
-
-refer `LICENSE` file in this repository.
+Please create issue or open PR.
