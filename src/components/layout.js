@@ -23,8 +23,15 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Posithing' },
             { name: 'keywords', content: 'новини, медия, България, позитивизъм, постижения, успехи, гордост' },
           ]}
+          link={[
+            {
+              "rel": "icon",
+              "type": "image/png",
+              "href": "favicon.ico"
+            }
+          ]}
         >
-          <html lang="en" />
+          <html lang="bg" />
         </Helmet>
         <div>{children}</div>
       </>

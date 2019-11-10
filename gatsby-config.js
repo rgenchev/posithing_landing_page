@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/gatsby-starter-hyperspace/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/posithing/`, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
     title: 'Posithing',
   },

@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-hyperspace",
+  "name": "posithing",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Hyperspace by HTML5 UP",
+  "description": "Posithing - the positive media",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-hyperspace.git"
+    "url": "git+https://github.com/rgenchev/posithing_landing_page.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Radoslav Genchev",
+    "email": "r.genchew@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
@@ -40,11 +40,11 @@
   "keywords": [
     "gatsby",
     "gatsby-starter",
-    "gatsby-starter-hyperspace"
+    "posithing"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-hyperspace/issues"
+    "url": "https://github.com/rgenchev/posithing_landing_page/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-hyperspace#readme"
+  "homepage": "https://github.com/rgenchev/posithing_landing_page"
 }
