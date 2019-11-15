@@ -22,6 +22,10 @@ const Layout = ({ children }) => (
           meta={[
             { name: 'description', content: 'Posithing' },
             { name: 'keywords', content: 'новини, медия, България, позитивизъм, постижения, успехи, гордост' },
+            { property: 'og:url', content: "https://angry-nobel-f58237.netlify.com/" },
+            { property: 'og:title', content: "Posithing" },
+            { property: 'og:description', content: 'Информирайте се за хубавите/позитивните неща случващи се в България.' },
+            { property: 'og:image', content: 'https://images.unsplash.com/photo-1533186758335-367d64aeb7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1555&q=80' }
           ]}
           link={[
             {
