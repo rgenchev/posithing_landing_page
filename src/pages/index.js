@@ -126,7 +126,7 @@ const IndexPage = () => (
             <section>
               <ul className="contact">
 
-              <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.FB_APP_ID}>
+              <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.GATSBY_FB_APP_ID}>
               </FacebookButton>
 
                 <li>
