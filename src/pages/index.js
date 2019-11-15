@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
+import { FacebookButton } from "react-social";
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -123,6 +125,10 @@ const IndexPage = () => (
             </section>
             <section>
               <ul className="contact">
+
+              <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.FB_APP_ID}>
+              </FacebookButton>
+
                 <li>
                   <h3>За повече информация</h3>
                   <a href="mailto:r.genchew@gmail.com">r.genchew@gmail.com</a><br/>
