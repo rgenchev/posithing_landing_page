@@ -24,8 +24,15 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'новини, медия, България, позитивизъм, постижения, успехи, гордост' },
             { property: 'og:url', content: "https://angry-nobel-f58237.netlify.com/" },
             { property: 'og:title', content: "Posithing" },
+            { property: 'og:type', content: 'website' },
             { property: 'og:description', content: 'Информирайте се за хубавите/позитивните неща случващи се в България.' },
-            { property: 'og:image', content: 'https://images.unsplash.com/photo-1533186758335-367d64aeb7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1555&q=80' }
+            { property: 'og:image', content: 'https://images.unsplash.com/photo-1533186758335-367d64aeb7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1555&q=80' },
+            { property: 'twitter:title', content: 'Posithing' },
+            { property: 'twitter:description', content: 'Информирайте се за хубавите/позитивните неща случващи се в България.' },
+            { property: 'twitter:card', content: 'summary_large_image' },
+            { property: 'twitter:site', content: "@posithing_org" },
+            { property: 'twitter:creator', content: "@posithing_org" },
+            { property: 'twitter:image', content: 'https://images.unsplash.com/photo-1533186758335-367d64aeb7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1555&q=80'}
           ]}
           link={[
             {

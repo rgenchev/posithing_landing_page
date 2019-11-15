@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
-import { FacebookButton } from "react-social";
+import { FacebookButton, TwitterButton } from "react-social";
+import FontAwesome from 'react-fontawesome'
 
 const IndexPage = () => (
   <Layout>
@@ -126,8 +127,22 @@ const IndexPage = () => (
             <section>
               <ul className="contact">
 
-              <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.GATSBY_FB_APP_ID}>
-              </FacebookButton>
+                <li>
+                  <h3>Нека се разчуе:</h3>
+                  <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.GATSBY_FB_APP_ID} style={{backgroundColor: '#3b5998', lineHeight: '0', marginRight: '5px'}}>
+                    <FontAwesome
+                      name="facebook"
+                      size="2x"
+                    />
+                  </FacebookButton>
+
+                  <TwitterButton url="https://angry-nobel-f58237.netlify.com/" style={{backgroundColor: '#38A1F3', lineHeight: '0'}}>
+                    <FontAwesome
+                      name="twitter"
+                      size="2x"
+                    />
+                  </TwitterButton>
+                </li>
 
                 <li>
                   <h3>За повече информация</h3>
