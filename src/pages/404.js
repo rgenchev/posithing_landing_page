@@ -5,9 +5,14 @@ import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
-    <h3>За съжаление страницата, която търсиш, не беше открита :(</h3>
-
-    <Link to="/" className="button" style={{backgroundColor: '#C6008F'}}>Върни се обратно на главната страница!</Link>
+    <div>
+        <section className="wrapper style1 fullscreen fade-up">
+          <div className="wrapper" style={{ textAlign: "center" }}>
+            <h3>За съжаление страницата не беше открита :(</h3>
+            <Link to="/" className="button" style={{backgroundColor: '#C6008F'}}>Обратно към главната страница</Link>
+          </div>
+        </section>
+    </div>
   </Layout>
 );
 
