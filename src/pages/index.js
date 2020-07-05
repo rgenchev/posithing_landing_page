@@ -1,14 +1,16 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
 import { FacebookButton, TwitterButton } from "react-social";
 import FontAwesome from 'react-fontawesome'
 
-const IndexPage = () => (
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
+const IndexPage = (props) => (
   <Layout>
     <Sidebar />
 
@@ -39,25 +41,31 @@ const IndexPage = () => (
             <p>В какво се изразява проекта?</p>
           </div>
         </section>
-        <section>
-
-          <div className="content">
-            <div className="inner">
-              <h2>Каква е целта ни?</h2>
-              <p>Да повишим позитивизма и увереността у българите (в България и чужбина).</p>
-              <p>"Как въобще е възможно това?!" - ще си кажете.</p>
-              <p>Създавайки общество от дейци, генерирането и споделянето на ПОЗИТИВНО И ИСТИНСКО съдържание, под формата на статии, новини, събития, инициативи и т.н.</p>
-              <p>
-                За целта ще разчитаме на партньорства с университети, училища и музеи, б(в)логъри, дизайнери, програмисти и общо взето всички ентусиасти,
-                които са готови да допринесат, отделяйки част от времето и споделяйки знанията си.
-              </p>
-            </div>
-          </div>
-        </section>
-        
       </section>
 
-      <section id="realization" className="wrapper style3 fade-up">
+      <section id="goal" className="wrapper style1 spotlights">
+        <section>
+          <div className="content">
+            <h2>Каква е целта ни?</h2>
+
+            <p>
+              В края на деня искаме да дадем възможност на всеки българин (в България или в чужбина) да има място, което може да посети и да вижда положителни неща, в чиято основа стоят наши сънародници.
+            </p>
+
+            <h3>“Как е възможно това?”</h3>
+
+            <p>
+              Ние имаме следния отговор — искаме да създадем общество от активни дейци, които да вземат участие в намирането, създаването и споделянето на позитивно и истинско съдържание. Това може да бъде под формата на статии, новини, проекти, събития, инициативи и т.н.
+            </p>
+
+            <p>
+              Докато преди десет години подобно начинание би изисквало огромна координация, в днешно време можем да разчитаме, че да почерпим информация от даден източник във всеки един момент е възможно благодарение на дигиталното присъствие. Целта в началото ни е да развием партньорства с университети, училища и музеи, бизнеси, б(в)логъри, и професионалисти, които са склонни да ни отделят част от своето време, за да покажем позитивното, което те имат да споделят.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="realization" className="wrapper style2 fade-up">
         <div className="inner">
           <h2>Реализация на проекта</h2>
           <p>
@@ -116,7 +124,39 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="join" className="wrapper style1 fade-up">
+      <section id="contributors" className="wrapper style1 fade-up">
+        <div className="inner">
+          <h2 className="mb5">Хора, допринесли за развитието на проекта:</h2>
+
+          <div class="mw9 center ph3-ns tc">
+            <div class="cf ph2-ns">
+              <div class="fl w-100 w-third-ns pa2">
+                <section>
+                  <Img fixed={props.data.hadjo.childImageSharp.fixed} className="br-100 h3 w3 dib" />
+                  <h4 className="f7-m">Александър</h4>
+                  <a href="mailto:aleksandar.e.had@gmail.com"><span className="icon fa-envelope" /></a>
+                </section>
+              </div>
+              <div class="fl w-100 w-third-ns pa2">
+                <section>
+                  <Img fixed={props.data.maykal.childImageSharp.fixed} className="br-100 h3 w3 dib" />
+                  <h4 className="f7-m">Майкъл</h4>
+                  <a href="mailto:maykalgenchev@gmail.com"><span className="icon fa-envelope" /></a>
+                </section>
+              </div>
+              <div className="fl w-100 w-third-ns pa2">
+                <section>
+                  <Img fixed={props.data.rado.childImageSharp.fixed} className="br-100 h3 w3 dib" />
+                  <h4 className="f7-m">Радослав</h4>
+                  <a href="mailto:r.genchew@gmail.com"><span className="icon fa-envelope" /></a>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" className="wrapper style2 fade-up">
         <div className="inner">
           <h2>Присъедини се</h2>
           <p>
@@ -133,14 +173,14 @@ const IndexPage = () => (
 
                 <li>
                   <h3>Нека се разчуе:</h3>
-                  <FacebookButton url="https://angry-nobel-f58237.netlify.com/" appId={process.env.GATSBY_FB_APP_ID} style={{backgroundColor: '#3b5998', lineHeight: '0', marginRight: '5px'}}>
+                  <FacebookButton url="https://posithing.org/" appId={process.env.GATSBY_FB_APP_ID} style={{backgroundColor: '#3b5998', lineHeight: '0', marginRight: '5px', fontSize: '10px'}}>
                     <FontAwesome
                       name="facebook"
                       size="2x"
                     />
                   </FacebookButton>
 
-                  <TwitterButton url="https://angry-nobel-f58237.netlify.com/" style={{backgroundColor: '#38A1F3', lineHeight: '0'}}>
+                  <TwitterButton url="https://posithing.org/" style={{backgroundColor: '#38A1F3', lineHeight: '0', fontSize: '10px'}}>
                     <FontAwesome
                       name="twitter"
                       size="2x"
@@ -148,11 +188,6 @@ const IndexPage = () => (
                   </TwitterButton>
                 </li>
 
-                <li>
-                  <h3>За повече информация</h3>
-                  <a href="mailto:r.genchew@gmail.com">r.genchew@gmail.com</a><br/>
-                  <a href="mailto:maykalgenchev@gmail.com">maykalgenchev@gmail.com</a>
-                </li>
                 <li>
                   <h3>Социални медии</h3>
                   <ul className="icons">
@@ -175,8 +210,33 @@ const IndexPage = () => (
       </section>
     </div>
 
-    <Footer />
   </Layout>
 );
 
 export default IndexPage;
+
+export const query = graphql`
+  query {
+    hadjo: file(relativePath: { eq: "hadjo.jpeg" }) {
+      childImageSharp {
+        fixed(width: 70, height: 70) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    maykal: file(relativePath: { eq: "maykal.jpg" }) {
+      childImageSharp {
+        fixed(width: 70, height: 70) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    rado: file(relativePath: { eq: "rado.jpeg" }) {
+      childImageSharp {
+        fixed(width: 70, height: 70) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+  }
+`

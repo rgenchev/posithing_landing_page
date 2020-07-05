@@ -9,8 +9,10 @@ export class Sidebar extends Component {
       tabs: [
         { content: 'Добре дошли', href: 'welcome' },
         { content: 'За нас', href: 'about' },
+        { content: 'Каква е целта ни?', href: 'goal' },
         { content: 'Реализация', href: 'realization' },
-        { content: 'Присъедини се', href: 'join' },
+        { content: 'Екип', href: 'contributors' },
+        { content: 'Присъедини се', href: 'join' }
       ],
     };
   }
