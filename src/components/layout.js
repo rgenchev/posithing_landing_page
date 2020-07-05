@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/main.scss';
+import '../assets/stylesheets/tachyons.min.css'
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
